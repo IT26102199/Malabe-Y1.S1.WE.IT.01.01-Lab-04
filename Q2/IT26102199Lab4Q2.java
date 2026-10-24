@@ -20,11 +20,10 @@ public class IT26102199Lab4Q2 {
 			System.out.print("Please enter the precentage given for thew lab submission: ");
 			double p_l_marks = input.nextDouble();
 			
-			if((p_exam + p_l_marks) == 100) {
+			if(p_marks + p_l_marks == 100) {
+					double fullMarks=(e_marks*p_marks)/100 + (s_marks*p_l_marks)/100 ;
 				
-				double f_mark = 10;
-				
-				System.out.print("Final Exam Mark is: " + f_mark);
+					System.out.print("The final exam mark is:" +fullMarks);
 				
 			} else {
 				System.out.print("The precentages must add up to 100. Terminating program.");
